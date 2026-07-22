@@ -3,13 +3,44 @@
 <head> <!-- tag de abertura do head -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>site legal</title>
+    <meta name="description" content="Um guia completo sobre HTML e suas tags.">
+    <meta name="keywords" content="HTML, tags, programação, web design">
+    <meta name="author" content="Ana Júlia Siqueira">
+    
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/249/249385.png" type="image/x-png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    
+
+    <title> site legal</title>
 </head> <!-- tag de fechamento do head -->
 <body>
-    <h1>Bem-vindo ao site</h1>
-    <p>Este é um exemplo de 
+
+    <header>
+        <h1 style="font-family: Dancing Script">Bem vindo ao site!</h1>
+    </header>
+    <h2 style="font-family: Dancing Script">Este é um exemplo de 
         página definido com o português do Brasil.
-    </p>
-    <p> Eis que leto </p>
+    </h2>
+    <p id="paragrafo"> Eis que leto </p>
+
+    <button id="botao"> Clique aqui </button>
+
+    <script>
+        const paragrafo = document.querySelector("#paragrafo");
+        const botao = document.querySelector("#botao");
+        botao.addEventListener("click", () => {
+            paragrafo.innerHTML = "Cavei ra";
+        });
+
+    </script>
+
+    <footer>
+        &copy; 2026 - Ana Júlia Siqueira. Todos os direitos reservados.
+    </footer>
+
 </body>
 </html>

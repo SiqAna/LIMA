@@ -1,0 +1,16 @@
+ * {
+    background-color: #ff8ba0;
+}
+h1,h2,p{
+    color:azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    color:azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
