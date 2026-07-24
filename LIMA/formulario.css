@@ -1,0 +1,14 @@
+ * {
+    background-color: #df5c74;
+}
+button{
+    background-color: #ff7b7b;
+    color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    color:#ffffff;
+}

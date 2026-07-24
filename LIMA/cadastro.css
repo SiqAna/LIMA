@@ -1,0 +1,15 @@
+ * {
+    background-color: #ffc7d1;
+}
+button{
+    padding: 10px 20px;
+    color: white;
+    background-color: #ff6868;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+label{
+    color:#b11c1c;
+}

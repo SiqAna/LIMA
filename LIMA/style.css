@@ -1,16 +1,33 @@
  * {
     background-color: #ff8ba0;
 }
-h1,h2,p{
-    color:azure;
+p{
+    color:#ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 button{
-    color:azure;
+    background-color: #ff7b7b;
+    color:#ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul, ol {
+    color:#ffffff;
+    text-align: center;
+}
+

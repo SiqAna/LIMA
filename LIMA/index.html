@@ -1,7 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- identifica o tipo de documento como HTML5 -->
+<html lang="pt-br"> <!-- identifica o idioma -->
 <head> <!-- tag de abertura do head -->
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Um guia completo sobre HTML e suas tags.">
     <meta name="keywords" content="HTML, tags, programação, web design">
@@ -20,16 +20,22 @@
 <body>
 
     <header>
-        <h1 style="font-family: Dancing Script">Bem vindo ao site!</h1>
+        <img src="detalheSite.png" height="350">
+        <h1 style="font-family: Dancing Script; color:#ffffff ; display:flex; justify-content:right; align-items:right;">Bem vindo ao site!</h1>
     </header>
-    <h2 style="font-family: Dancing Script">Este é um exemplo de 
+    <h2 style="font-family: Dancing Script; color:#ffffff ; display:flex;justify-content:right;align-items:right;"">
+        Este é um exemplo de 
         página definido com o português do Brasil.
     </h2>
+
     <p id="paragrafo"> Eis que leto </p>
 
-    <button id="botao"> Clique aqui </button>
-
-    <script>
+    <div class="botao"> 
+        <!-- se essa div nao estiver em cima do script ela é ignorada-->
+        <button id="botao">Clique aqui</button>
+    </div>
+    
+        <script>
         const paragrafo = document.querySelector("#paragrafo");
         const botao = document.querySelector("#botao");
         botao.addEventListener("click", () => {
@@ -38,9 +44,121 @@
 
     </script>
 
+    
+
+    <main>
+        <h3 style="color: #ffffff; text-align: center;"> 
+            
+Minha terra tem <u> <b> palmeiras </b> </u> , <br>
+Onde canta o Sabiá; <br>
+As aves, que aqui gorjeiam, <br>
+Não gorjeiam como lá. <br>
+<br>
+Nosso céu tem mais estrelas, <br>
+Nossas várzeas têm mais flores, <br>
+Nossos bosques têm mais vida, <br>
+Nossa vida mais amores.<br>
+<br>
+Em cismar, sozinho, à noite,<br>
+Mais prazer encontro eu lá;<br>
+Minha terra tem palmeiras,<br>
+Onde canta o Sabiá.<br>
+<br>
+Minha terra tem primores,<br>
+Que tais não encontro eu cá;<br>
+Em cismar - sozinho, à noite -<br>
+Mais prazer encontro eu lá;<br>
+Minha terra tem palmeiras,<br>
+Onde canta o Sabiá.<br>
+<br>
+Não permita Deus que eu morra,<br>
+Sem que volte para lá;<br>
+Sem que desfrute os primores<br>
+Que não encontro por cá;<br>
+Sem qu’inda aviste as palmeiras,<br>
+Onde canta o Sabiá.  </h3>
+
+<p> Este é um abre chevron &lt; </p>
+
+<p> Lista de compras</p>
+    <ul style="text-align: center;"> 
+    <!-- lista não ordenada para itens sem ordem específica
+     Cada item da lista é definido pela tag <li>-->
+        <li> Maçã </li>
+        <li> Pão </li>
+        <li> Leite </li>
+        <li> Ovos </li>
+    </ul>
+
+    <ul >
+        <ul type="disc">
+        <li> Item com marcador padrão (disc) </li>
+        </ul>
+    </ul>
+
+    <ul> 
+        <ul type="circle">
+        <li> Item com marcador vazio (circle)</li>
+        </ul>
+    </ul>
+
+    <ul> 
+        <ul type="square">
+        <li> Item com marcador de quadrado cheio (square) </li>
+        </ul>
+    </ul>
+
+    <h2 
+    style=color:#ffffff;display:flex;justify-content:center;align-items:center;>
+     Passos para ligar um pc </h2>
+    <ol> <!-- lista ordenada para ligar um pc -->
+
+        <li> Verificar se o cabo de alimentação está conectado na tomada </li>
+        <li"> Certificar-se de que o cabo está conectado no computador </li>
+        <li> Aguardar o sistema operacional carregar </li>
+        <li> Aguardar até que a tela de inicialização apareça </li>
+
+    </ol>
+
+    <ol start="5"> 
+        <li> item 5 </li> 
+        <li> item 6 </li> 
+        <li> item 7 </li> 
+    </ol>
+<p>
+    <a href="https://www.pngmart.com/image/tag/ena" title="imagem ena">
+    <img src= "Ena-PNG.png"> 
+</a>
+</p>
+
+<table border="1" style="width: 100%; text-align: center;">
+    <tr>
+        <th> Nome </th>
+        <th> Idade </th>
+        <th> Cidade </th>
+    </tr>
+
+    <tr>
+        <td> Ana Júlia </td>
+        <td> 16 </td>
+        <td> São Paulo </td>
+    </tr>
+
+    <tr>
+        <td> Carlos </td>
+        <td> 56 </td>
+        <td> São Paulo </td>
+    </tr>
+</table>
+
+    <a href="https://www.google.com" target="blank" title="Faça buscas na internet">
+         Clique aqui para ir ao Google </a>
+
     <footer>
         &copy; 2026 - Ana Júlia Siqueira. Todos os direitos reservados.
     </footer>
+
+    </main>
 
 </body>
 </html>
