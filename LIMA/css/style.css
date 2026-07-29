@@ -1,0 +1,56 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(212, 228, 217);
+    color:rgb(198, 15, 55);
+    margin: 0;
+    padding: 40px;
+}
+
+h1{
+    text-align: center;
+    color: rgb(198, 15, 55);
+    font-size: 60px;
+    }
+
+p{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 10px;
+}
+
+.lorem{
+    color: rgb(18, 118, 69);
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 10px;
+}
+
+p.lorem{
+    text-align: justify;
+}
+
+#texto{
+    color: rgb(18, 194, 109);
+    font-size: 20px;
+    text-align: center;
+}
+
+.conteudo{
+    width: 55%;
+    height: 75%;
+}
+
+#botao:hover{
+    color: rgb(204, 223, 212);
+    background-color: rgb(13, 87, 26);
+}
+
+#palmeiras{
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+    width: 200px;
+}
+
+#palmeiras:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
