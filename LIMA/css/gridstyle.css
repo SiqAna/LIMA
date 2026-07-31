@@ -1,0 +1,61 @@
+body{
+    background-image: url(detalheSite.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-color:pink;
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid; /*Define o conteiner com layout grid*/
+    grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+    grid-template-columns: 250px lfr;
+    grid-template-rows: auto lfr auto;
+    height:100vh;
+    gap: 10px;
+    padding: 10px;
+}
+
+.header{
+    grid-area:header;
+    background-color: rgb(188, 66, 84);
+    padding: 20px;
+    border-right: 10px solid color rgb(237, 215, 215);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    width: 250px;
+    height: 700px;
+    background-color: rgb(154, 62, 75);
+    padding: 20px;
+    border-right: 10px solid color rgb(237, 215, 215);
+    color: rgb(255, 255, 255);
+}
+
+.content{
+    grid-area:content;
+    background-color: rgb(164, 29, 47);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 10px rgba(62, 54, 116, 0.992);
+}
+
+.footer{
+    grid-area:footer;
+    background-color: rgb(188, 66, 84);
+    padding: 20px;
+    border-right: 10px solid color rgb(237, 215, 215);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: bold;
+}

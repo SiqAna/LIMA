@@ -1,0 +1,58 @@
+body{
+    background-image: url(degradeRoxo.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family:'Times New Roman';
+    line-height: 1.6;
+    color: #2e0d2b;
+    background-color: rgb(253, 233, 243) ;
+    margin: 0;
+    padding: 0;
+}
+
+.site-header{
+    background-color: rgb(118, 61, 89);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/*Destaque*/
+.highlight{
+    background-color: rgb(218, 135, 216);
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.info{
+    background-color: rgb(255, 241, 241);
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #754f4f;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px;
+}
+
+.link{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover{
+    color: rgb(192, 0, 189);
+}
+
+.site-footer{
+    background-color: rgb(102, 52, 102);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
