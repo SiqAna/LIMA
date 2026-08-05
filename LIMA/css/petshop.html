@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop do João</title>
+    <link rel="stylesheet" href="petshopstyle.css">
+    <style>
+        :root{
+            --primary-color: #7e1740;
+            --secondary-color: #ffabdf;
+            --background-color: #fde7f3;
+            --text-color: #955c75;
+            --light-text-color: #d4a3ba;
+            --border-radius:20px;    
+            --button-color: rgb(150, 34, 76);
+        }
+        [data-theme="dark"]{
+            --primary-color:#be1360;
+            --secondary-color:#ff5da9;
+            --background-color: #5c3146;
+            --text-color:#f0e8ec;
+            --button-color: rgb(255, 232, 241);
+            --box-color:rgb(129, 83, 90);
+        }
+
+        
+        body{
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a{
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover{
+            color: var(--secondary-color);
+        }
+
+        .btn{
+            background-color: var(--button-color);
+            color: var(--background-color);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover{
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Petshop do João
+            </h1>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li>
+                        <a href="#"> Início </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#services">Serviços</a>
+                    </li>
+
+                    <li>
+                        <a href="#about">Sobre Nós</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#contact">Contatos</a>
+                    </li>
+                </ul>
+                <button class="menu toggle" arial-label="Abrir Menu">&#9776</button>
+            </nav>
+            <button id="theme-toggle" class="btn">Alternar tema</button>
+        </div>
+    </header>
+    <main class="main-content container">
+
+        <aside class="sidebar">
+            <h2>Sobre o Petshop</h2>
+            <p>A Pet Shop do João oferece serviços de alta qualidade para 
+            cuidar do seu melhor amigo.</p>
+            <ul class="sidebar-link">
+                <li>
+                    <a href="#contact">Clínica Veterinária</a>
+                </li>
+                <li>
+                    <a href="#contact">Banho e Tosa</a>
+                </li>
+                <li>
+                    <a href="#contact">Pet Hotel</a>
+                </li>
+                <li>
+                    <a href="#contact">Produtos para Pets</a>
+                </li>
+            </ul>
+        </aside>
+        <section class="cards">
+            
+            <h2>Nossos serviços</h2>
+            
+            <div class="card">
+                <h3>Banho e tosa</h3>
+                <img src="" alt="Banho e Tosa">
+                <p>Deixe seu pet ainda mais bonito e cheiroso!</p>
+                <button class="btn"> Saiba Mais </button>
+            </div>
+
+            <div class="card">
+                <h3>Clínica Veterinária</h3>
+                <img src="" alt="Clínica Veterinária">
+                <p>Cuidade e atenção para seu pet!</p>
+                <button class="btn"> Saiba Mais </button>
+            </div>
+
+            <div class="card">
+                <h3>Pet Hotel</h3>
+                <img src="" alt="Pet Hotel">
+                <p>Conforto e segurança enquanto você está fora!</p>
+                <button class="btn"> Saiba Mais </button>
+            </div>
+        </section>
+    </main>                 
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy: Pet Shop do João. Todos os direitos reservados.</p>
+            <p><strong> Endereço:</strong> Rua dos Animais, 123, Bairro Pet - Cidade dos Bichos</p>
+            <p><strong>Telefone:</strong>(99)99999-9999</p>
+            <p><strong>Horário de atendimento:</strong> Segunda a Sexta: 8h - 18h | 
+            Sábados: 9h - 14h</p>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById("theme-toggle")
+        themeToggle.addEventListener("click", ()=>{
+            document.body.dataset.theme = document.body.dataset.theme === "dark" ? "": "dark";
+
+        })
+</script>
+</body>
+</html>
