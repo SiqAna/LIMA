@@ -1,0 +1,27 @@
+.estrelinha{
+    color: rgb(239, 248, 255);
+    position: fixed;
+    pointer-events: none;
+    font-size: 35px;
+    text-shadow: 0 0 6px rgb(255, 182, 213), 0 0 10px rgb(255, 198, 224); 
+    animation: caiEDesvanece 1000ms ease-out forwards;
+    content: "&#10022;";
+}
+
+body{
+    height: 100vh;
+    background-image: url(pinkiepiebg.jpg);
+    background-size: 85%;
+    overflow: hidden;
+}
+
+@keyframes caiEDesvanece {
+    0%{
+        opacity: 1;
+        transform: translate(0,0) scale(1) rotate(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translate(var(--xAleatorio), 40px) scale(0.3) rotate(45deg); 
+    }
+}

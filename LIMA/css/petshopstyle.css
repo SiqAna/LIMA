@@ -4,7 +4,7 @@
     --background-color: #fde7f3;
     --text-color: #955c75;
     --light-text-color: #d4a3ba;
-    --border-radius:20px;    
+    --border-radius:50px;    
     --button-color: rgb(150, 34, 76);
     --box-color:pink;
 }
@@ -136,7 +136,7 @@ body{
 }
 
 .card img{
-    width: 15%;
+    width: 35%;
     border-radius: var(--border-radius);
     padding: 0.5rem 1rem;
     border: none;
@@ -148,8 +148,8 @@ body{
     background-color: var(--secondary-color);
 }
 
-h1, h2, h3, p, ul{
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
+h1, h2{
+    -webkit-text-stroke: 0.006cm var(--primary-color);
 }
 
 .footer{
@@ -165,4 +165,38 @@ h1, h2, h3, p, ul{
     .main-content{
         flex-direction: column;
     }
+
+    
+.sidebar{
+    width: 100%;
+}
+
+.cards{
+    width: 100%;
+}
+
+.nav-links{
+    display: none;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 100%;
+}
+
+.nav-links.active{
+    display: flex;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+}
+
+.sidebar img{
+    width: 100%;
+    margin: 10px 0;
+    border-radius: var(--border-radius);
 }
