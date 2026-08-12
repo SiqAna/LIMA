@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins
+    :wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/menu.js"></script>
+    <link rel="stylesheet" href="css/contato.css">
+    <script defer src="js/menu.js"></script>
+</head>
+<body>
+    
+    <header>
+        <nav role="navigation" aria-label="Menu Principal">
+            <div>
+            <button id="menu-toggle" class="menu-toggle" 
+            aria-lable="abrir menu">&#8801</button>
+        </div>
+        <ul id="menu" class="menu" role="navigation" 
+        aria-labelledby="menu-toggle">
+
+        <li><a href="index.html" tabindex="0">
+        Início
+        </a></li>
+
+        <li><a href="sobre.html" tabindex="0">
+        Sobre
+        </a></li>
+
+        <li><a href="serviços.html" tabindex="0">
+        Serviços 
+        </a></li>
+
+        <li><a href="contato.html" tabindex="0">
+        Contato
+        </a></li>
+    </ul>
+        </nav>
+    </header> 
+
+    <main>
+    <section class="content" role="form" aria-labelledby="contato-form">
+        <h2 id="contato-form"> Entre e Contato </h2>
+        <p>Preencha o formulário ou entre em contato por telefone ou e-mail.</p>
+        <form class="contact-form" aria-describedby="formulario-contato-desc"></form>
+        <div class="form-group">
+            <label for="none">Nome</label>
+            <input typo="text" id="nome" name="nome" placeholder="Digite o seu nome completo"
+            required aria-required="true" aria-describedby="nome-ajuda" tabindex="0">
+            <span id="nome-ajuda" class="sr-only"> Por favor, insira seu nome completo.</span>
+        </div>
+
+        
+        <div class="form-group">
+            <label for="none">email</label>
+            <input typo="email" id="email" name="email" placeholder="Digite o seu email"
+            required aria-required="true" aria-describedby="email-ajuda" tabindex="0">
+            <span id="email-ajuda" class="sr-only"> Digite um email válido. </span>
+        </div>
+
+        <div class="form-group">
+            <label for="none">Telefone</label>
+            <input typo="tel" id="telefone" name="telefone" placeholder="(99)99999-9999"
+            required aria-required="true" aria-describedby="telefone-ajuda" tabindex="0">
+            <span id="telefone" class="sr-only"> Insira seu telefone no 
+            formato (99)99999-9999.</span>
+        </div>
+
+        <div class="form-group">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto" required aria-required="true" tabindex="0">
+                <option value="">Escolha um assunto</option>
+                <option value="Suporte"> Suporte Técnico</option>
+                <option value="Desenvolvimento"> Desenvolvimento de Software</option>
+                <option value="Consultoria"> Consultoria em TI </option>
+                <option value="Infraestrutura"> Infraestrutura de TI </option>
+                <option value="Orcamento"> Orçamento </option>
+                <option value="Duvida"> Dúvidas Gerais </option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="mensagem">Mensagem</label> <br>
+            <span id="mensagem-ajuda" class="sr-only">Descreva sua dúvida ou solicitação</span> <br>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" required
+            aria-required="true" aria-describedby="mensagem-ajuda" tabindex="0"></textarea>
+            <div>
+                <button type="submit" class="btn-submit" aria-label="Enviar mensagem">
+                    Enviar mensagem
+                </button>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer>
+        <p> -------------------------------------------------------------------------------------------</p>
+        <p> &copy; Nova Tecnologia Informática | Todos os direitos reservados.</p>
+        <p><strong>Endereço: </strong>Rua Alan Turing, 123, Bairro Eniac, Cidade das Máquinas</p>
+        <p><strong>Telefone: </strong><a href="tel:+55999999999">(99)99999-9999</a></p>
+        <p><strong>Email: </strong><a href="mailto:contato@novatecinfo.com">contato@novatecinfo.com</a></p>
+        <p><strong>Horário de Funcionamento: </strong>Segunda a Sexta: 8h - 18h | Sábado: 9h - 14h</p>
+    </footer>
+</body>
+</html>
