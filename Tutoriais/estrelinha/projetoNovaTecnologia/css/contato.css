@@ -1,0 +1,28 @@
+.contact-form{
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color:rgb(219, 243, 255);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+lavel{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(75, 144, 255);
+    border-radius: 20px;
+}
+textarea{
+    max-width: 400px;   
+}

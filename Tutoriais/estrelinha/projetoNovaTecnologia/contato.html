@@ -14,7 +14,18 @@
 <body>
     
     <header>
+
         <nav role="navigation" aria-label="Menu Principal">
+            
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo da empresa 
+            Nova Tecnologia Informática">
+        </div>
+
+        <div class="nome">
+            <h1>Nova Tecnologia Informática</h1>
+        </div>
+
             <div>
             <button id="menu-toggle" class="menu-toggle" 
             aria-lable="abrir menu">&#8801</button>
@@ -44,8 +55,8 @@
     <main>
     <section class="content" role="form" aria-labelledby="contato-form">
         <h2 id="contato-form"> Entre e Contato </h2>
+        <form class="contact-form" aria-describedby="formulario-contato-desc">
         <p>Preencha o formulário ou entre em contato por telefone ou e-mail.</p>
-        <form class="contact-form" aria-describedby="formulario-contato-desc"></form>
         <div class="form-group">
             <label for="none">Nome</label>
             <input typo="text" id="nome" name="nome" placeholder="Digite o seu nome completo"
@@ -92,12 +103,13 @@
                 </button>
             </div>
         </div>
+
+        </form>
     </section>
 
     </main>
 
     <footer>
-        <p> -------------------------------------------------------------------------------------------</p>
         <p> &copy; Nova Tecnologia Informática | Todos os direitos reservados.</p>
         <p><strong>Endereço: </strong>Rua Alan Turing, 123, Bairro Eniac, Cidade das Máquinas</p>
         <p><strong>Telefone: </strong><a href="tel:+55999999999">(99)99999-9999</a></p>
