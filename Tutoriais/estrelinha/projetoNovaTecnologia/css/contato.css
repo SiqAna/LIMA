@@ -26,3 +26,18 @@ input, select, textarea{
 textarea{
     max-width: 400px;   
 }
+.btn-submit{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(32, 102, 162);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-submit:hover{
+    background-color:rgb(3, 47, 86);
+    color: white;
+    transition: 1s;
+}

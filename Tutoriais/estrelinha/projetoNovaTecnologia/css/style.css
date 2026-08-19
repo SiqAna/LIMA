@@ -8,8 +8,11 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(232, 232, 255);
-    color:rgb(0, 33, 62);
+    background-color: rgb(6, 35, 93);
+    background-image: url("fundoazul.jpg") ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color:rgb(70, 123, 209);
 }
 
 a{
@@ -55,6 +58,11 @@ header nav ul li a{
     display: flex;
 }
 
+.logo img{
+    width: 20%;
+    border-radius: 20%;
+}
+
 .nome{
     width: 70%;
     margin-left: 2px;
@@ -89,13 +97,13 @@ header nav ul li a{
     justify-content: center;
     align-items: center;
     padding:30px;
-    background-color: white;
+    background-color: rgb(0, 43, 108);
     box-shadow: 0 4px 8px rgba(0,0,0,0.4);
 }
 
 .carousel-item img{
     max-width: 100%;
-    height:auto;
+    height: 300px;
     margin-right: 1px;
     border-radius: 8px;
 }
@@ -104,7 +112,7 @@ header nav ul li a{
     position: absolute;
     top:50%;
     transform: translateY(-50%);
-    background-color: rgb(175, 175, 237);
+    background-color: rgb(54, 98, 163);
     color: white;
     border: none;
     font-size: 2rem;
@@ -139,7 +147,7 @@ header nav ul li a{
 }
 
 .service-item{
-    background:white;
+    background:rgb(210, 230, 255);
     padding:1.5rem;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.4);
@@ -183,7 +191,7 @@ footer{
 }
 
 .content-item{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(181, 206, 242);
     padding: 0.5rem;
     border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
@@ -238,19 +246,25 @@ footer{
 }
 
 @media (max-width: 768px){
-    .menu-toggle{
-        display: block;
+        .menu-toggle{
+            display: block;
+        }
+
+
+    .menu{
+        display: none;
+        flex-direction: column;
+        background-color: rgb(0, 136, 255);
+        width: 100%;
+        text-align: center;
     }
-}
 
-.menu{
-    display: none;
-    flex-direction: column;
-    background-color: rgb(0, 136, 255);
-    width: 100%;
-    text-align: center;
-}
+    .menu-show{
+        display: flex;
+    }
 
-.menu-show{
-    display: flex;
+    .menu li{
+        padding:10px;
+    }
+
 }
